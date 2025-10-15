@@ -7,7 +7,7 @@ const person: Person = {
   name: `Ayush Tiwari`,
   role: "Product Manager & Frontend Developer",
   avatar: "/images/avatar.jpg",
-  email: "ayush.tiwari@example.com",
+  email: "tiwariayush77@gmail.com",
   location: "Asia/Kolkata",
   languages: ["English", "Hindi"],
 };
@@ -21,7 +21,7 @@ const newsletter: Newsletter = {
 const social: Social = [
   { name: "GitHub", icon: "github", link: "https://github.com/tiwariayush77" },
   { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/ayushtiwari77/" },
-  { name: "Portfolio", icon: "globe", link: "https://tiwariayush77.vercel.app" },
+  { name: "Portfolio", icon: "globe", link: "https://ayush-portfolio-magic.vercel.app" },
   { name: "Email", icon: "email", link: `mailto:${person.email}` },
 ];
 
@@ -30,8 +30,8 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Product Manager & Frontend Developer specializing in AI-powered solutions and user experience optimization`,
-  headline: <>Building AI-powered products that solve real problems</>,
+  description: `PM Fellow focused on 0→1 execution, AI-driven UX, and growth experiments across fintech, edtech, and commerce.`,
+  headline: <>Designing AI-powered products that drive measurable outcomes</>,
   featured: {
     display: true,
     title: (
@@ -45,8 +45,9 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Ayush, a Product Manager at <strong>Vance Inc</strong> and <strong>BrightBunny</strong>, where I build
-      <br /> AI-powered products and optimize user experiences through data-driven insights.
+      PM Fellow at <strong>Product Space</strong>. Previously: <strong>Vance</strong> (Fintech), founder at <strong>BrightBunny</strong> (Edtech).
+      Led sprints for <strong>QwikPik</strong> (AI social shopping), <strong>Blinkit</strong> (retention), <strong>Nykaa</strong> (AR try‑on),
+      and <strong>Amazon</strong> (choice overload optimization).
     </>
   ),
 };
@@ -55,7 +56,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} specializing in AI integration and user experience`,
+  description: `PM Fellow specializing in 0→1 execution, AI integration and growth.`,
   tableOfContent: { display: true, subItems: false },
   avatar: { display: true },
   calendar: { display: true, link: "https://cal.com/ayushtiwari" },
@@ -64,9 +65,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Ayush is a Product Manager and Frontend Developer with expertise in AI integration, user experience optimization,
-        and full-stack development. Currently building AI-powered solutions at Vance Inc and BrightBunny, with a focus on
-        fintech and consumer products that solve real-world problems through innovative technology.
+        Ayush is a Product Management Fellow with a track record in discovery→delivery cycles, growth experiments, and
+        cross‑functional leadership. Recent capstone: SonyLIV retention redesign with projected 35% feature adoption lift
+        via mood‑based onboarding and activation optimization.
       </>
     ),
   },
@@ -75,32 +76,43 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Vance Inc",
-        timeframe: "2024 - Present",
-        role: "Product Manager",
-        achievements: [
-          <>Leading 0-to-1 product development for AI-powered fintech solutions, focusing on user acquisition and engagement optimization.</>,
-          <>Developed comprehensive PRDs and BRDs, implementing RICE framework for feature prioritization and A/B testing strategies.</>,
-        ],
-        images: [],
-      },
-      {
-        company: "BrightBunny",
-        timeframe: "2024 - Present",
-        role: "Product Manager",
-        achievements: [
-          <>Built B2C product experiences with focus on user journey optimization and conversion rate improvement through data-driven insights.</>,
-          <>Implemented product analytics and user research methodologies to drive product decisions and feature development.</>,
-        ],
-        images: [],
-      },
-      {
-        company: "ProductSpace & Newton School",
-        timeframe: "2023 - 2024",
+        company: "Product Space",
+        timeframe: "Jul 2025 – Present",
         role: "Product Management Fellow",
         achievements: [
-          <>Completed intensive Product Management certification program focusing on product strategy, user research, and technical implementation.</>,
-          <>Led cross-functional product sprints and developed expertise in product design, analytics, and go-to-market strategies.</>,
+          <>Won capstone for SonyLIV retention redesign (35% adoption lift projected).</>,
+          <>Led 4 PM sprints: QwikPik (AI social shopping), Blinkit (CLV retention), Nykaa (AR try‑on), Amazon (choice overload).</>,
+          <>Appreciation from Truecaller for SDK monetization strategy and fintech use‑case analysis.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Vance (Fintech)",
+        timeframe: "Jan 2022 – Apr 2022",
+        role: "Product Strategy & GTM Intern",
+        achievements: [
+          <>Built 0→1 B2B pipeline; identified high‑conversion segments to inform PMF.</>,
+          <>+20% lead conversion and 15% faster onboarding via GTM experiments and funnel analysis.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "BrightBunny (Edtech)",
+        timeframe: "Apr 2020 – Dec 2021",
+        role: "Founder",
+        achievements: [
+          <>Launched career discovery platform for Class 7–12; 50+ students completed curated 3–5 day mentorships.</>,
+          <>Closed B2B partnerships in Indore & Bhopal; solved perception vs. reality gap in career choices.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Exampeer (Edtech)",
+        timeframe: "Jun 2019 – Jun 2021",
+        role: "Business Development Executive",
+        achievements: [
+          <>Competitor mapping across 10+ players and 3 cohorts; +25% demo→signup lift.</>,
+          <>Instituted feedback loop; 3+ UX improvements led to +20% task completion.</>,
         ],
         images: [],
       },
@@ -110,43 +122,38 @@ const about: About = {
     display: true,
     title: "Education & Certifications",
     institutions: [
-      { name: "ProductSpace", description: <>Product Management Fellowship - Strategy, Analytics, and User Research.</> },
-      { name: "Newton School", description: <>Product Management Certification - Technical Product Development.</> },
+      { name: "B.Tech (Hons.), ECE — UIT RGPV Bhopal", description: <>2018 – 2022</> },
+      { name: "Aha! Product Management — Professional Certificate", description: <>Certification</> },
+      { name: "Atlassian Agile Project Management — Professional Certificate", description: <>Certification</> },
+      { name: "Microsoft Azure AI Essentials — Professional Certificate", description: <>Certification</> },
     ],
   },
   technical: {
     display: true,
-    title: "Technical Skills",
+    title: "Skills & Tooling",
     skills: [
       {
-        title: "Frontend Development",
-        description: (<>Building modern web applications with Next.js, React, and TypeScript.</>),
-        tags: [
-          { name: "Next.js", icon: "nextjs" },
-          { name: "React", icon: "react" },
-          { name: "TypeScript", icon: "typescript" },
-        ],
+        title: "Product Strategy & Execution",
+        description: (<>Discovery→Delivery, RICE, PRDs/BRDs, GTM, A/B testing.</>),
+        tags: [ { name: "Strategy", icon: "chart" }, { name: "GTM", icon: "globe" } ],
         images: [],
       },
       {
-        title: "AI Integration & APIs",
-        description: (<>Implementing AI-powered features using Gemini API, Firebase, and automation tools.</>),
-        tags: [
-          { name: "Firebase", icon: "firebase" },
-          { name: "API", icon: "globe" },
-        ],
+        title: "Research & UX",
+        description: (<>User interviews, JTBD, journey mapping, wireframing, prototyping.</>),
+        tags: [ { name: "Figma", icon: "figma" } ],
         images: [],
       },
       {
-        title: "Product Management",
-        description: (<>RICE prioritization, A/B testing, user research, PRD/BRD development, and analytics.</>),
-        tags: [ { name: "Analytics", icon: "chart" } ],
+        title: "AI & Automation",
+        description: (<>Gemini, automation with n8n, data flows, integrations.</>),
+        tags: [ { name: "n8n", icon: "bot" }, { name: "AI", icon: "sparkles" } ],
         images: [],
       },
       {
-        title: "Automation & Workflows",
-        description: (<>Building complex workflows with n8n, Telegram APIs, and process automation.</>),
-        tags: [ { name: "Automation", icon: "bot" } ],
+        title: "Frontend Foundations",
+        description: (<>Next.js, React, TypeScript fundamentals for prototyping.</>),
+        tags: [ { name: "Next.js", icon: "nextjs" }, { name: "TypeScript", icon: "typescript" } ],
         images: [],
       },
     ],
@@ -156,7 +163,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Product insights and technical deep-dives...",
+  title: "Product insights and technical deep‑dives...",
   description: `Read what ${person.name} has been learning and building`,
 };
 
