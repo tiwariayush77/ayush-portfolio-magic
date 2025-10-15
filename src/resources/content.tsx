@@ -2,45 +2,27 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Ayush",
+  lastName: "Tiwari",
+  name: `Ayush Tiwari`,
+  role: "Product Manager & Frontend Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "ayush.tiwari@example.com",
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi"],
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Weekly insights on Product Management, AI integration, and frontend development</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
-  },
+  { name: "GitHub", icon: "github", link: "https://github.com/tiwariayush77" },
+  { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/ayushtiwari77/" },
+  { name: "Portfolio", icon: "globe", link: "https://tiwariayush77.vercel.app" },
+  { name: "Email", icon: "email", link: `mailto:${person.email}` },
 ];
 
 const home: Home = {
@@ -48,31 +30,23 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Product Manager & Frontend Developer specializing in AI-powered solutions and user experience optimization`,
+  headline: <>Building AI-powered products that solve real problems</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">QwikPik</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
+        <Text marginRight="4" onBackground="brand-medium">Featured project</Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/qwikpik-ai-social-shopping",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Ayush, a Product Manager at <strong>Vance Inc</strong> and <strong>BrightBunny</strong>, where I build
+      <br /> AI-powered products and optimize user experiences through data-driven insights.
     </>
   ),
 };
@@ -81,149 +55,100 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
-  tableOfContent: {
-    display: true,
-    subItems: false,
-  },
-  avatar: {
-    display: true,
-  },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
+  description: `Meet ${person.name}, ${person.role} specializing in AI integration and user experience`,
+  tableOfContent: { display: true, subItems: false },
+  avatar: { display: true },
+  calendar: { display: true, link: "https://cal.com/ayushtiwari" },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Ayush is a Product Manager and Frontend Developer with expertise in AI integration, user experience optimization,
+        and full-stack development. Currently building AI-powered solutions at Vance Inc and BrightBunny, with a focus on
+        fintech and consumer products that solve real-world problems through innovative technology.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Vance Inc",
+        timeframe: "2024 - Present",
+        role: "Product Manager",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Leading 0-to-1 product development for AI-powered fintech solutions, focusing on user acquisition and engagement optimization.</>,
+          <>Developed comprehensive PRDs and BRDs, implementing RICE framework for feature prioritization and A/B testing strategies.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "BrightBunny",
+        timeframe: "2024 - Present",
+        role: "Product Manager",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Built B2C product experiences with focus on user journey optimization and conversion rate improvement through data-driven insights.</>,
+          <>Implemented product analytics and user research methodologies to drive product decisions and feature development.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "ProductSpace & Newton School",
+        timeframe: "2023 - 2024",
+        role: "Product Management Fellow",
+        achievements: [
+          <>Completed intensive Product Management certification program focusing on product strategy, user research, and technical implementation.</>,
+          <>Led cross-functional product sprints and developed expertise in product design, analytics, and go-to-market strategies.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education & Certifications",
     institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      { name: "ProductSpace", description: <>Product Management Fellowship - Strategy, Analytics, and User Research.</> },
+      { name: "Newton School", description: <>Product Management Certification - Technical Product Development.</> },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
+        title: "Frontend Development",
+        description: (<>Building modern web applications with Next.js, React, and TypeScript.</>),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "React", icon: "react" },
+          { name: "TypeScript", icon: "typescript" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
+        title: "AI Integration & APIs",
+        description: (<>Implementing AI-powered features using Gemini API, Firebase, and automation tools.</>),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Firebase", icon: "firebase" },
+          { name: "API", icon: "globe" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },  
+        images: [],
+      },
+      {
+        title: "Product Management",
+        description: (<>RICE prioritization, A/B testing, user research, PRD/BRD development, and analytics.</>),
+        tags: [ { name: "Analytics", icon: "chart" } ],
+        images: [],
+      },
+      {
+        title: "Automation & Workflows",
+        description: (<>Building complex workflows with n8n, Telegram APIs, and process automation.</>),
+        tags: [ { name: "Automation", icon: "bot" } ],
+        images: [],
+      },
     ],
   },
 };
@@ -231,70 +156,23 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Product insights and technical deep-dives...",
+  description: `Read what ${person.name} has been learning and building`,
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Product and development projects by ${person.name}`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  title: `Gallery – ${person.name}`,
+  description: `Project screenshots and workflow diagrams by ${person.name}`,
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
