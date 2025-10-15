@@ -13,7 +13,7 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>Weekly insights on Product Management, AI integration, and frontend development</>,
 };
