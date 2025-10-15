@@ -11,7 +11,7 @@ import {
   Meta,
   Line,
 } from "@once-ui-system/core";
-import { home, about, person, baseURL, routes, newsletter } from "@/resources";
+import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
@@ -124,8 +124,7 @@ export default function Home() {
         </Column>
       )}
       <Projects range={[2]} />
-      {/* Render CTA only when newsletter is disabled (Coffee Chat replaces it) */}
-      {!newsletter.display && <Mailchimp />}
+      <Mailchimp />
     </Column>
   );
 }
