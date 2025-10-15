@@ -13,14 +13,14 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: false,
+  display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>Weekly insights on Product Management, AI integration, and frontend development</>,
 };
 
 const social: Social = [
   { name: "GitHub", icon: "github", link: "https://github.com/tiwariayush77" },
-  { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/ayushtiwari77/" },
+  { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/tiwariayush77/" },
   { name: "Portfolio", icon: "globe", link: "https://ayush-portfolio-magic.vercel.app" },
   { name: "Email", icon: "email", link: `mailto:${person.email}` },
 ];
